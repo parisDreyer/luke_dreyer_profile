@@ -6,33 +6,56 @@
 -->
 <html>
 	<head>
-		<title>Luke Dreyer</title>
+		<title>
+			Luke Dreyer 
+		</title>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/flicker-text.css" />
 	</head>
 	<body class="is-preload">
-
+		
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar2.jpg" alt="" /></a>
-					<h1><strong>I am Luke</strong>, a software developer<br />
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/avatar2.jpg" alt="" /></a>
+				<h1><strong>I am Luke</strong>, a software developer<br />
 					in the Bay Area<br />
-					whose goal is to bring tech into the <a href="http://lucparis.x10host.com" target="_blank">Next Era</a>.</h1>
+					whose goal is to bring tech into the 
+					<!-- youtube song on your site: https://www.labnol.org/internet/youtube-audio-player/26740/ -->
+					<div data-video="tXyDUFC7pHU" data-autoplay="0" data-loop="0" id="youtube-audio"><span id="youtube-icon" class="ripple">Next era</span></div>
+					<script src="https://www.youtube.com/iframe_api"></script>
+					<script>
+						/* 
+						This was adapted by me (Luke) (to remove button icon) fr
+						YouTube Audio Embed 
+						--------------------
+						API: src="https://cdn.rawgit.com/labnol/files/master/yt.js"
+						Author: Amit Agarwal
+						Web: http://www.labnol.org/?p=26740 
+						*/
+						function onYouTubeIframeAPIReady() { var e = document.getElementById("youtube-audio"), 
+						t = document.getElementById("youtube-icon");
+						t.style.cssText = "cursor:pointer;cursor:hand";
+						e.appendChild(t); var a = document.createElement("div"); a.setAttribute("id", "youtube-player"), e.appendChild(a); var o = function (e) { var a = e ? "IDzX9gL.png" : "quyUPXN.png";  }; e.onclick = function () { r.getPlayerState() === YT.PlayerState.PLAYING || r.getPlayerState() === YT.PlayerState.BUFFERING ? (r.pauseVideo(), o(!1)) : (r.playVideo(), o(!0)) }; var r = new YT.Player("youtube-player", { height: "0", width: "0", videoId: e.dataset.video, playerVars: { autoplay: e.dataset.autoplay, loop: e.dataset.loop }, events: { onReady: function (e) { r.setPlaybackQuality("small"), o(r.getPlayerState() !== YT.PlayerState.CUED) }, onStateChange: function (e) { e.data === YT.PlayerState.ENDED && o(!1) } } }) }
+						</script>
+					<!--<a href="http://lucparis.x10host.com" target="_blank">Next Era</a>.--></h1>
+					
 				</div>
+				
 			</header>
-
-		<!-- Main -->
+			
+			<!-- Main -->
 			<div id="main">
-
+				
 				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>"There are two great days in a person's life: the day we are born and the day we discover why" -William Barclay</h2>
-						</header>
-						<p>I am a Curious Web Developer using mainly React, Node, and Rails in the Bay Area. Interested in developing for a company that
+				<section id="one">
+					<header class="major">
+						<h2>"There are two great days in a person's life: the day we are born and the day we discover why" -William Barclay</h2>
+					</header>
+					<p>I am a Curious Web Developer using mainly React, Node, and Rails in the Bay Area. Interested in developing for a company that
 						is optimizing Data Analytics, Data Collection Techniques, or AI.
 						Currently developing a chatbot using React and PSQL that makes nutritional suggestions based on what you've eaten.
 						In the past I studied Computational Linguistics, and used Support-Vector-Machines, Neural-Networks, Genetic-Algorithms,
@@ -45,8 +68,8 @@
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
 					</section>
-
-				<!-- Two -->
+					
+					<!-- Two -->
 					<section id="two">
 						<h2>Recent Work</h2>
 						<div class="row">
@@ -67,38 +90,38 @@
 								<a href="images/fulls/stackInferno.jpg" class="image fit thumb"><img src="images/fulls/stackInferno.jpg" alt="" /></a>
 								<h3>STACKINFERNO (Rails, ReactJS, Webpack, Javascript, PostgreSQL) | Sole Developer</h3>
 								<p><a href="https://stack-infierno.herokuapp.com" target="_blank">Live</a> | <a href="https://github.com/parisDreyer/fullstack" target="_blank">Github</a>
-								A literary spinoff of StackOverflow using Rails for the database management system and React for the frontend UI
-								Rails aggregates and orders user’s questions, comments, and answers to discuss Dante Alighieri’s epic poem The Divine
-								Comedy.
-								Generated Example users and user posts using algebraic logic, regular expressions and random numbers to format every
-								sentence of Dante Alighieri’s Divine Comedy into 9000 Unique database entries spread across 15 postgreSQL database
-								tables</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/smartKitchen.jpg" class="image fit thumb"><img src="images/fulls/smartKitchen.jpg" alt="" /></a>
-								<h3>SMART KITCHEN (ReactJS, Webpack, NodeJS, MongoDB, Webkit, Express) | Team: Surrendan, Mitchel, Yip, Dreyer</h3>
-								<p>
-									<a href="https://smart-kitchen1.herokuapp.com" target="_blank">Live</a> | <a href="https://github.com/parisDreyer/SmartKitchen/" target="_blank">github</a>
-									A voice-recognition enabled single page web-app that suggests what to cook based on what you have in your fridge.
-									Streamlined development with Webpack and babel to transpile the latest ECMA features for cross Browser Functionality
-									for a faster build phase with easier to read code.
-									Discussed reviewed and deployed a slick UI with seamless frontend navigation browser-data persistence, and flexible
-									recipe search matching.
-									Utilized MITs REACT speech component webkit api extension to consistently deliver voice-enabled recipe searching.
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/flyingFish.jpg" class="image fit thumb"><img src="images/fulls/flyingFish.jpg" alt="" /></a>
-								<h3>Flying Fish | Solo (Unity3D)</h3>
-								<p>
-									<a href="http://lucparis.x10host.com/FlightSimTestwebGL/" target="_blank">Live</a>
-									You're in an aeroplane and the skies are clear -- 
-									until a bunch of flying fish on the horizon! Dodge 
-									the flying fish or go veering out of control! How long can you fly?
-								</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/chatBotApi.jpg" class="image fit thumb"><img src="images/fulls/chatBotApi.jpg" alt="" /></a>
+									A literary spinoff of StackOverflow using Rails for the database management system and React for the frontend UI
+									Rails aggregates and orders user’s questions, comments, and answers to discuss Dante Alighieri’s epic poem The Divine
+									Comedy.
+									Generated Example users and user posts using algebraic logic, regular expressions and random numbers to format every
+									sentence of Dante Alighieri’s Divine Comedy into 9000 Unique database entries spread across 15 postgreSQL database
+									tables</p>
+								</article>
+								<article class="col-6 col-12-xsmall work-item">
+									<a href="images/fulls/smartKitchen.jpg" class="image fit thumb"><img src="images/fulls/smartKitchen.jpg" alt="" /></a>
+									<h3>SMART KITCHEN (ReactJS, Webpack, NodeJS, MongoDB, Webkit, Express) | Team: Surrendan, Mitchel, Yip, Dreyer</h3>
+									<p>
+										<a href="https://smart-kitchen1.herokuapp.com" target="_blank">Live</a> | <a href="https://github.com/parisDreyer/SmartKitchen/" target="_blank">github</a>
+										A voice-recognition enabled single page web-app that suggests what to cook based on what you have in your fridge.
+										Streamlined development with Webpack and babel to transpile the latest ECMA features for cross Browser Functionality
+										for a faster build phase with easier to read code.
+										Discussed reviewed and deployed a slick UI with seamless frontend navigation browser-data persistence, and flexible
+										recipe search matching.
+										Utilized MITs REACT speech component webkit api extension to consistently deliver voice-enabled recipe searching.
+									</p>
+								</article>
+								<article class="col-6 col-12-xsmall work-item">
+									<a href="images/fulls/flyingFish.jpg" class="image fit thumb"><img src="images/fulls/flyingFish.jpg" alt="" /></a>
+									<h3>Flying Fish | Solo (Unity3D)</h3>
+									<p>
+										<a href="http://lucparis.x10host.com/FlightSimTestwebGL/" target="_blank">Live</a>
+										You're in an aeroplane and the skies are clear -- 
+										until a bunch of flying fish on the horizon! Dodge 
+										the flying fish or go veering out of control! How long can you fly?
+									</p>
+								</article>
+								<article class="col-6 col-12-xsmall work-item">
+									<a href="images/fulls/chatBotApi.jpg" class="image fit thumb"><img src="images/fulls/chatBotApi.jpg" alt="" /></a>
 								<h3>Experimental Chatbot</h3>
 								<p>
 									<a href="http://lucparis.x10host.com/" target="_blank">Live</a>
@@ -117,8 +140,8 @@
 							<li><a href="#" class="button">Full Portfolio</a></li>
 						</ul>
 					</section>
-
-				<!-- Three -->
+					
+					<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
 						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
@@ -155,7 +178,7 @@
 							</div>
 						</div>
 					</section>
-
+					
 				<!-- Four -->
 				<!--
 					<section id="four">
@@ -497,6 +520,5 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

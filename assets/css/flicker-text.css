@@ -1,0 +1,43 @@
+
+/* 
+    adapted from:
+    https://codepen.io/benjystanton/pen/wFIEe 
+*/
+#youtube-icon {
+  -webkit-animation: flicker 2s 10;
+  font-family:'Lato', sans-serif;
+  font-size:1.5em;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.75em;
+  margin: 0;
+}
+
+@-webkit-keyframes flicker
+{
+    0%  { color: rgba(206, 175, 0, 0.2);}
+    9%  { color: rgba(131, 116, 74, 0.4);}
+    10% { color: rgba(255, 248, 153, 0.5);}
+    13% { color: rgba(255, 250, 185, 0.3);}
+    20% { color: rgba(254, 255, 202, 0.5);}
+    25% { color: rgba(255, 255, 255, 1);}
+}
+
+#youtube-icon:hover{
+    -webkit-animation: flicker 0;
+    color: rgba(255, 248, 153, 0.5);
+}
+
+
+
+
+/* Ripple effect */
+.ripple {
+  /* background-position: center; */
+  transition: background-color 1.2s, padding 1.2s;
+  border-radius: 50%;
+}
+.ripple:active {
+  background-color: #C0C0C0;
+  padding:  15px;
+  transition: background-color 0s, padding 0s;
+}
