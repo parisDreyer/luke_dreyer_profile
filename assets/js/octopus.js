@@ -203,7 +203,7 @@ const octoLoop = () => window.setTimeout(() => {
 
     window.setTimeout(() => {
         octoLoop();
-    }, (6000 + Math.random() * 10))
-}, (3000 + Math.random() * 10));
+    }, (6001 + Math.random() * 10000))
+}, (3000 + Math.random() * 1000));
 
 octoLoop();
